@@ -15,25 +15,34 @@
             <div class="container">
                 <nav class="site-nav">
                     <a href="./index.html" class="logo" aria-label="логотип сайта" lang="en"><span class="logo-accent">Web</span>Studio</a>
-                    <button class="menu-button is-open" aria-expanded="true" aria-controls="menu-container" data-menu-button>...</button>
+                    <button type="button"
+                     class="menu-button is-open"
+                     aria-expanded="false"
+                     aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-cross"   href="./images/sprite.svg#icon-close_40px"></use>
+                        <use class="icon-menu"  href="./images/sprite.svg#icon-menu_40px"></use>
+                    </svg>
+                    </button>
                     <div class="menu-container is-open" id="menu-container" data-menu>
                         <div class="navigation">
                             <ul class="site-nav-list">
-                                <li class="item"><a href="./index.html" class="site-nav-link current">Студия</a></li>
-                                <li class="item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>
-                                <li class="item"><a href="" class="site-nav-link">Контакты</a></li>
+                                <li class="navigation__item"><a href="./index.html" class="site-nav-link current">Студия</a></li>
+                                <li class="navigation__item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>
+                                <li class="navigation__item"><a href="" class="site-nav-link">Контакты</a></li>
                             </ul>
                         </div>
                         <div class="contacts">
                             <ul class="site-nav-list-address">
-                                <li class="item">
+                                <li class="contacts__item">
                                     <a href="info@devstudio.com" class="site-nav-link mail">
                                         <svg class="mail-svg" width="16px" height="12px">
                                             <use href="./images/sprite.svg#icon-envelope-hover"></use>
                                         </svg>
                                     info@devstudio.com </a>
                                 </li>
-                                <li class="item">
+                                <li class="contacts__item">
                                     <a href="mailto:tel:+380961111111" class="site-nav-link number">
                                         <svg class="number-svg" width="10px" height="16px">
                                             <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -142,7 +151,7 @@
                     <h2 class="section-team-title">Наша команда</h2>
                     <ul class="team-list"> 
                         <li class="team-list-link">
-                            <img src="images/img1.jpg" alt="Игорь Демьяненко"
+                            <img class="section-team__img" src="images/img1.jpg" alt="Игорь Демьяненко"
                             width="270"
                             height="260">
                             <div class="team-title-info" >
@@ -183,7 +192,7 @@
                             </div>
                         </li>
                         <li class="team-list-link">
-                            <img src="images/img2.jpg" alt="Ольга Репина"
+                            <img class="section-team__img" src="images/img2.jpg" alt="Ольга Репина"
                             width="270"
                             height="260">
                             <div class="team-title-info" >
@@ -224,7 +233,7 @@
                             </div>
                         </li>
                         <li class="team-list-link">
-                            <img src="images/img3.jpg" alt="Николай Тарасов"
+                            <img class="section-team__img" src="images/img3.jpg" alt="Николай Тарасов"
                             width="270"
                             height="260">
                             <div class="team-title-info" >
@@ -264,8 +273,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-list-link">
-                            <img src="images/img4.jpg" alt="Михаил Ермаков"
+                        <li  class="team-list-link">
+                            <img class="section-team__img" src="images/img4.jpg" alt="Михаил Ермаков"
                             width="270"
                             height="260">
                             <div class="team-title-info">

@@ -1,7 +1,12 @@
-.section-team{
-    background-color: #F5F4FA;
-    //padding-top: 94px;
-    //padding-bottom: 94px;
+
+//     background-color: #F5F4FA;
+//     //padding-top: 94px;
+//     //padding-bottom: 94px;
+// }
+
+.section-team__img{
+    width: 450px;
+    height: 460px;
 }
 
 .section-team-title{
@@ -10,6 +15,8 @@
     line-height: 1.17;
     text-align: center;
     color: var(--title-texst-color);
+
+    padding-top: 60px;
 }
 
 .team-list{
@@ -17,6 +24,8 @@
     //flex-wrap: wrap;
     justify-content: space-between;
     //padding-top: 50px;
+    
+    padding-bottom: 60px;
 }
 
 .team-title-name{
@@ -53,6 +62,8 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    margin-top: 30px;
 }
 
 .team-icon{
