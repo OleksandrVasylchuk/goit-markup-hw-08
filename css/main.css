@@ -239,7 +239,7 @@ img {
 }
 
 .site-nav-link.mail {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-style: normal;
   color: var(--primary-texst-color);
@@ -250,7 +250,7 @@ img {
 }
 
 .site-nav-link.number {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-style: normal;
   color: var(--primary-text-color);
@@ -358,8 +358,8 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero_desk-2x.jpg");
-    background-size: 1200px 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_desk-2x.jpg");
+    background-size: 1600px 600px;
   }
 }
 
@@ -824,16 +824,35 @@ html {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .section-team__img {
+    width: 354px;
+    height: 374px;
+  }
+  .team-list-link {
+    width: 354px;
+  }
   .team-list {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
+.section-team__img {
+  object-fit: cover;
+}
+
 @media screen and (min-width: 1200px) {
   .team-list {
     display: flex;
     padding-top: 50px;
+  }
+  .section-team__img {
+    width: 270px;
+    height: 260px;
+  }
+  .team-list-link {
+    width: 270px;
+    height: 428px;
   }
   .team-list .team-list-link + .team-list-link {
     margin-left: 30px;
@@ -883,7 +902,7 @@ html {
 .team-list-link {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .team-icon {

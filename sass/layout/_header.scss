@@ -210,7 +210,7 @@
     }
     
     &.mail{
-        display: flex;
+        display: inline-flex;
         align-items: center;
         font-style: normal;
         color: var(--primary-texst-color);
@@ -223,7 +223,7 @@
     }
     
     &.number{
-        display: flex;
+        display: inline-flex;
         align-items: center;
         font-style: normal;
         color: var(--primary-text-color);
