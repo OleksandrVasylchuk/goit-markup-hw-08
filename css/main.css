@@ -337,7 +337,7 @@ img {
   background-color: #2F303A;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-2x.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_desk-2x.jpg");
   background-size: 100% 100%;
   border: 1px solid transparent;
   min-height: 400px;
@@ -943,7 +943,6 @@ html {
   fill: var(--primary-white-color);
 }
 
-/*================= PORTFOLIO============= */
 .force-name {
   font-weight: 700;
   font-size: 18px;
@@ -1104,7 +1103,6 @@ img {
   }
 }
 
-/*=================  END PORTFOLIO============= */
 .line-button {
   justify-content: start;
 }
