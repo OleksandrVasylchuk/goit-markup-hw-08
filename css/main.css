@@ -615,21 +615,6 @@ html {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .item {
-    width: 270px;
-  }
-  .item:nth-child(n+2) {
-    margin-left: 30px;
-  }
-  .container .feature-item .item + .item {
-    margin-left: 30;
-  }
-  .section-title {
-    text-align: start;
-  }
-}
-
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1038,12 +1023,17 @@ img {
 .position-portfolio {
   display: block;
   position: absolute;
+  align-content: center;
   width: 100%;
   height: 100%;
   left: 0px;
   bottom: 0px;
   align-items: center;
   opacity: 0;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 63px;
+  padding-bottom: 63px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1078,13 +1068,19 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .flex-element:nth-child(-n + 2) {
+    height: 440px;
+  }
   .flex-element {
     width: 354px;
-    height: 440px;
     margin-bottom: 30px;
   }
   .line-button {
     justify-content: center;
+  }
+  .portfolio-card {
+    width: 354px;
+    height: 294px;
   }
 }
 
@@ -1095,17 +1091,26 @@ img {
     width: 1200px;
     border: none;
   }
+  .flex-element {
+    width: 370px;
+    height: 404px;
+    margin-bottom: 30px;
+  }
   .line-button__list {
     display: flex;
     justify-content: center;
     margin-top: 94px;
     margin-bottom: 50px;
   }
+  .portfolio-card {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 /*=================  END PORTFOLIO============= */
 .line-button {
-  justify-content: center;
+  justify-content: start;
 }
 
 .button.primary.secondary {
@@ -1131,6 +1136,24 @@ img {
 .button.primary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .line-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .line-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .is-hidden {
