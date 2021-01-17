@@ -342,27 +342,6 @@ img {
   min-height: 400px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-2x.jpg");
-    background-size: 480px 100%;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_tablet-2x.jpg");
-    background-size: 768px 100%;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_desk-2x.jpg");
-    background-size: 1600px 600px;
-  }
-}
-
 .container.hero-box {
   text-align: center;
 }
@@ -388,6 +367,36 @@ img {
 .button-one:hover, .button-one:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-2x.jpg");
+    background-size: 480px 100%;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_tablet-2x.jpg");
+    background-size: 768px 100%;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_desk-2x.jpg");
+    background-size: 1600px 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+  }
+  .hero-title {
+    padding-top: 200px;
+  }
 }
 
 .footer-form-paragraph {
@@ -436,54 +445,6 @@ img {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .address-icon {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .address-icon__contacts {
-    margin-left: 76px;
-    margin-right: 165px;
-  }
-  .e-mail {
-    display: block;
-    margin-bottom: 20px;
-  }
-  .footer-box {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .address-box {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .address-icon {
-    display: flex;
-  }
-  .footer-box {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .footer-form-paragraph {
-    text-align: start;
-  }
-  .address-box {
-    flex-direction: column-reverse;
-    margin-left: 70px;
-  }
-  .address-icon__contacts {
-    text-align: start;
-    margin: 0;
-  }
-  .e-mail {
-    width: 358px;
-    display: inline-flex;
-  }
-}
-
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -495,9 +456,6 @@ html {
 
 .footer {
   background: #2F303A;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer.logo {
@@ -555,10 +513,6 @@ html {
   color: #757575;
 }
 
-.address-box {
-  margin-top: 60px;
-}
-
 .address-icon {
   align-items: baseline;
   justify-content: flex-start;
@@ -595,6 +549,85 @@ html {
 .svg-list-item:hover, .svg-list-item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .address-box {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .address-icon {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .address-icon__contacts {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+  .e-mail {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-icon {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-box {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .footer-form-paragraph {
+    text-align: start;
+    margin-top: 0px;
+  }
+  .address-box {
+    flex-direction: column-reverse;
+    margin-left: 70px;
+    text-align: start;
+  }
+  .address-icon__contacts {
+    text-align: start;
+    margin: 0;
+  }
+  .e-mail {
+    width: 358px;
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    width: 270px;
+  }
+  .item:nth-child(n+2) {
+    margin-left: 30px;
+  }
+  .container .feature-item .item + .item {
+    margin-left: 30;
+  }
+  .section-title {
+    text-align: start;
+  }
 }
 
 .customers {
@@ -785,10 +818,10 @@ html {
   color: var(--primary-texst-color);
 }
 
-@media screen and (max-width: 767px) {
-  .item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.section-skills {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-white-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -797,6 +830,9 @@ html {
   }
   .item:nth-child(-n+2) {
     margin-bottom: 30px;
+  }
+  .section-title {
+    text-align: start;
   }
 }
 
@@ -810,12 +846,9 @@ html {
   .container .feature-item .item + .item {
     margin-left: 30;
   }
-}
-
-.section-skills {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--primary-white-color);
+  .section-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 768px) {
