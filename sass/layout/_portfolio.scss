@@ -39,7 +39,6 @@ img{
 
 .flex-element{
     width: 450px;
-    height: 404px;
     margin-bottom: 30px;
     border: 1px solid #eeeeee;
 }
@@ -141,10 +140,8 @@ img{
 } 
 
 @media screen and (min-width: 768px){
-    .flex-element:nth-child(-n + 2){
-        height: 440px;
-        
-    }
+    
+    
     .flex-element{
         width: 354px;
         margin-bottom: 30px;
@@ -154,7 +151,7 @@ img{
     }
     .portfolio-card{
         width: 354px;
-        height: 294px;
+    
     }
 
 }
