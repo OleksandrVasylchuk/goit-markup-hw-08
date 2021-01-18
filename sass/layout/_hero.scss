@@ -10,10 +10,6 @@
     font-size: 26px;
     line-height: 42px;
 
-    @media screen and (min-width: 1200px){
-        font-size: 44px;
-        line-height: 1.36;
-    }
 }
 
 .hero{
@@ -28,7 +24,12 @@
     background-size:  100% 100%;
     border: 1px solid transparent;
     min-height: 400px;
+
+
+   
 }
+
+
 
 .container.hero-box{
     text-align: center;
@@ -37,14 +38,10 @@
 .button-one{
     display: inline-block;
     padding: 10px 32px;
-
     margin-bottom: 118px;
-
     border-radius: 4px;
     text-align: center;
-    //min-width: 200px;
-    height: 50px;
-    //margin-top: 30px; 
+    height: 50px; 
 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
@@ -100,11 +97,28 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .hero{
+        background-image:  linear-gradient(
+            rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)
+            ),url("../images/hero_tablet-2x.jpg");
+            background-size:  768px 100%;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .hero{
+        background-image:  linear-gradient(
+            rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)
+            ),url("../images/hero_desk-1x.jpg");
+            background-size:  1600px 600px;
         min-height: 600px;
     }
     .hero-title{
+        font-size: 44px;
+        line-height: 1.36;
         padding-top: 200px;
     }
 }
