@@ -34,7 +34,7 @@ img{
 }
 
 .flex-element{
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
     border: 1px solid #eeeeee;
 }
@@ -110,7 +110,7 @@ img{
 }
 
 .flex-container__img{
-    width: 450px;
+    max-width: 450px;
     height: 294px;
 }
 
@@ -133,7 +133,7 @@ img{
 
 @media screen and (min-width: 768px){
     .flex-element{
-        width: 354px;
+        max-width: 354px;
         margin-bottom: 30px;
     }
 
@@ -142,7 +142,7 @@ img{
     }
 
     .portfolio-card{
-        width: 354px;
+       max-width: 354px;
     }
 }
     

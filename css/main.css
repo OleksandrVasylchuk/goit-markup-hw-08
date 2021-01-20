@@ -366,7 +366,7 @@ img {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-2x.jpg");
-    background-size: 480px 100%;
+    background-size: 100% 100%;
   }
 }
 
@@ -427,7 +427,7 @@ img {
   border-radius: 4px;
   background-color: transparent;
   margin-right: 12px;
-  width: 450px;
+  max-width: 450px;
 }
 
 .footer-form-button {
@@ -983,7 +983,7 @@ img {
 }
 
 .flex-element {
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
@@ -1049,7 +1049,7 @@ img {
 }
 
 .flex-container__img {
-  width: 450px;
+  max-width: 450px;
   height: 294px;
 }
 
@@ -1072,14 +1072,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .flex-element {
-    width: 354px;
+    max-width: 354px;
     margin-bottom: 30px;
   }
   .line-button {
     justify-content: center;
   }
   .portfolio-card {
-    width: 354px;
+    max-width: 354px;
   }
 }
 
@@ -1165,7 +1165,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  max-width: 450px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
